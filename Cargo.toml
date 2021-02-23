@@ -1,10 +1,20 @@
 [package]
-name = "bitcomsvr"
-version = "0.1.0"
-authors = ["Jeff"]
-edition = "2018"
+name          = "bitcomsvr"
+version       = "0.1.0"
+authors       = ["Jeff"]
+edition       = "2018"
+license       = "GPL"
+readme        = "README.md"
+documentation = "https://github.com/bitcomm-io/bitcomsvr"
+repository    = "https://github.com/bitcomm-io/bitcomsvr"
+description   = "Decentralized communication & Digital assets!"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "bitcomsvr"
+path = "src/bin/startup.rs"
+
 
 [dependencies]
 async-stream = "0.3.0"
